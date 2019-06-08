@@ -1,0 +1,718 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Zahtjev_za_materijalomDataSet" targetNamespace="http://tempuri.org/Zahtjev_za_materijalomDataSet.xsd" xmlns:mstns="http://tempuri.org/Zahtjev_za_materijalomDataSet.xsd" xmlns="http://tempuri.org/Zahtjev_za_materijalomDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Zahtjev_za_materijalomConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Zahtjev_za_materijalomConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DiReqt.Properties.Settings.GlobalReference.Default.Zahtjev_za_materijalomConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ZahtjeviTableAdapter" GeneratorDataComponentClassName="ZahtjeviTableAdapter" Name="Zahtjevi" UserDataComponentName="ZahtjeviTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Zahtjev_za_materijalomConnectionString (Settings)" DbObjectName="Zahtjev_za_materijalom.dbo.Zahtjevi" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Zahtjevi] WHERE (([id] = @Original_id) AND ((@IsNull_odjel = 1 AND [odjel] IS NULL) OR ([odjel] = @Original_odjel)) AND ((@IsNull_podnositelj = 1 AND [podnositelj] IS NULL) OR ([podnositelj] = @Original_podnositelj)) AND ((@IsNull_ident_sifra = 1 AND [ident_sifra] IS NULL) OR ([ident_sifra] = @Original_ident_sifra)) AND ((@IsNull_naziv = 1 AND [naziv] IS NULL) OR ([naziv] = @Original_naziv)) AND ((@IsNull_jm = 1 AND [jm] IS NULL) OR ([jm] = @Original_jm)) AND ((@IsNull_kolicina = 1 AND [kolicina] IS NULL) OR ([kolicina] = @Original_kolicina)) AND ((@IsNull_ident_sifra2 = 1 AND [ident_sifra2] IS NULL) OR ([ident_sifra2] = @Original_ident_sifra2)) AND ((@IsNull_naziv2 = 1 AND [naziv2] IS NULL) OR ([naziv2] = @Original_naziv2)) AND ((@IsNull_jm2 = 1 AND [jm2] IS NULL) OR ([jm2] = @Original_jm2)) AND ((@IsNull_kolicina2 = 1 AND [kolicina2] IS NULL) OR ([kolicina2] = @Original_kolicina2)) AND ((@IsNull_ident_sifra3 = 1 AND [ident_sifra3] IS NULL) OR ([ident_sifra3] = @Original_ident_sifra3)) AND ((@IsNull_naziv3 = 1 AND [naziv3] IS NULL) OR ([naziv3] = @Original_naziv3)) AND ((@IsNull_jm3 = 1 AND [jm3] IS NULL) OR ([jm3] = @Original_jm3)) AND ((@IsNull_kolicina3 = 1 AND [kolicina3] IS NULL) OR ([kolicina3] = @Original_kolicina3)) AND ((@IsNull_ident_sifra4 = 1 AND [ident_sifra4] IS NULL) OR ([ident_sifra4] = @Original_ident_sifra4)) AND ((@IsNull_naziv4 = 1 AND [naziv4] IS NULL) OR ([naziv4] = @Original_naziv4)) AND ((@IsNull_jm4 = 1 AND [jm4] IS NULL) OR ([jm4] = @Original_jm4)) AND ((@IsNull_kolicina4 = 1 AND [kolicina4] IS NULL) OR ([kolicina4] = @Original_kolicina4)) AND ((@IsNull_ident_sifra5 = 1 AND [ident_sifra5] IS NULL) OR ([ident_sifra5] = @Original_ident_sifra5)) AND ((@IsNull_naziv5 = 1 AND [naziv5] IS NULL) OR ([naziv5] = @Original_naziv5)) AND ((@IsNull_jm5 = 1 AND [jm5] IS NULL) OR ([jm5] = @Original_jm5)) AND ((@IsNull_kolicina5 = 1 AND [kolicina5] IS NULL) OR ([kolicina5] = @Original_kolicina5)) AND ((@IsNull_ident_sifra6 = 1 AND [ident_sifra6] IS NULL) OR ([ident_sifra6] = @Original_ident_sifra6)) AND ((@IsNull_naziv6 = 1 AND [naziv6] IS NULL) OR ([naziv6] = @Original_naziv6)) AND ((@IsNull_jm6 = 1 AND [jm6] IS NULL) OR ([jm6] = @Original_jm6)) AND ((@IsNull_kolicina6 = 1 AND [kolicina6] IS NULL) OR ([kolicina6] = @Original_kolicina6)) AND ((@IsNull_ident_sifra7 = 1 AND [ident_sifra7] IS NULL) OR ([ident_sifra7] = @Original_ident_sifra7)) AND ((@IsNull_naziv7 = 1 AND [naziv7] IS NULL) OR ([naziv7] = @Original_naziv7)) AND ((@IsNull_jm7 = 1 AND [jm7] IS NULL) OR ([jm7] = @Original_jm7)) AND ((@IsNull_kolicina7 = 1 AND [kolicina7] IS NULL) OR ([kolicina7] = @Original_kolicina7)) AND ((@IsNull_ident_sifra8 = 1 AND [ident_sifra8] IS NULL) OR ([ident_sifra8] = @Original_ident_sifra8)) AND ((@IsNull_naziv8 = 1 AND [naziv8] IS NULL) OR ([naziv8] = @Original_naziv8)) AND ((@IsNull_jm8 = 1 AND [jm8] IS NULL) OR ([jm8] = @Original_jm8)) AND ((@IsNull_kolicina8 = 1 AND [kolicina8] IS NULL) OR ([kolicina8] = @Original_kolicina8)) AND ((@IsNull_ident_sifra9 = 1 AND [ident_sifra9] IS NULL) OR ([ident_sifra9] = @Original_ident_sifra9)) AND ((@IsNull_naziv9 = 1 AND [naziv9] IS NULL) OR ([naziv9] = @Original_naziv9)) AND ((@IsNull_jm9 = 1 AND [jm9] IS NULL) OR ([jm9] = @Original_jm9)) AND ((@IsNull_kolicina9 = 1 AND [kolicina9] IS NULL) OR ([kolicina9] = @Original_kolicina9)) AND ((@IsNull_ident_sifra10 = 1 AND [ident_sifra10] IS NULL) OR ([ident_sifra10] = @Original_ident_sifra10)) AND ((@IsNull_naziv10 = 1 AND [naziv10] IS NULL) OR ([naziv10] = @Original_naziv10)) AND ((@IsNull_jm10 = 1 AND [jm10] IS NULL) OR ([jm10] = @Original_jm10)) AND ((@IsNull_kolicina10 = 1 AND [kolicina10] IS NULL) OR ([kolicina10] = @Original_kolicina10)) AND ((@IsNull_ident_sifra11 = 1 AND [ident_sifra11] IS NULL) OR ([ident_sifra11] = @Original_ident_sifra11)) AND ((@IsNull_naziv11 = 1 AND [naziv11] IS NULL) OR ([naziv11] = @Original_naziv11)) AND ((@IsNull_jm11 = 1 AND [jm11] IS NULL) OR ([jm11] = @Original_jm11)) AND ((@IsNull_kolicina11 = 1 AND [kolicina11] IS NULL) OR ([kolicina11] = @Original_kolicina11)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_odjel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="odjel" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_odjel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="odjel" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_podnositelj" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="podnositelj" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_podnositelj" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="podnositelj" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra6" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra6" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv6" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv6" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm6" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm6" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina6" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina6" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra7" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra7" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra7" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv7" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv7" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv7" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm7" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm7" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm7" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina7" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina7" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina7" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra8" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra8" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra8" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv8" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv8" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv8" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm8" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm8" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm8" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina8" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina8" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina8" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra9" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra9" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra9" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv9" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv9" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv9" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm9" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm9" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm9" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina9" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina9" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina9" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra10" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra10" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra10" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv10" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv10" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv10" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm10" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm10" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm10" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina10" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina10" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina10" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra11" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra11" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra11" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv11" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv11" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv11" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm11" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm11" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm11" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina11" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina11" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina11" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Zahtjevi] ([odjel], [podnositelj], [ident_sifra], [naziv], [jm], [kolicina], [ident_sifra2], [naziv2], [jm2], [kolicina2], [ident_sifra3], [naziv3], [jm3], [kolicina3], [ident_sifra4], [naziv4], [jm4], [kolicina4], [ident_sifra5], [naziv5], [jm5], [kolicina5], [ident_sifra6], [naziv6], [jm6], [kolicina6], [ident_sifra7], [naziv7], [jm7], [kolicina7], [ident_sifra8], [naziv8], [jm8], [kolicina8], [ident_sifra9], [naziv9], [jm9], [kolicina9], [ident_sifra10], [naziv10], [jm10], [kolicina10], [ident_sifra11], [naziv11], [jm11], [kolicina11]) VALUES (@odjel, @podnositelj, @ident_sifra, @naziv, @jm, @kolicina, @ident_sifra2, @naziv2, @jm2, @kolicina2, @ident_sifra3, @naziv3, @jm3, @kolicina3, @ident_sifra4, @naziv4, @jm4, @kolicina4, @ident_sifra5, @naziv5, @jm5, @kolicina5, @ident_sifra6, @naziv6, @jm6, @kolicina6, @ident_sifra7, @naziv7, @jm7, @kolicina7, @ident_sifra8, @naziv8, @jm8, @kolicina8, @ident_sifra9, @naziv9, @jm9, @kolicina9, @ident_sifra10, @naziv10, @jm10, @kolicina10, @ident_sifra11, @naziv11, @jm11, @kolicina11);
+SELECT id, odjel, podnositelj, ident_sifra, naziv, jm, kolicina, ident_sifra2, naziv2, jm2, kolicina2, ident_sifra3, naziv3, jm3, kolicina3, ident_sifra4, naziv4, jm4, kolicina4, ident_sifra5, naziv5, jm5, kolicina5, ident_sifra6, naziv6, jm6, kolicina6, ident_sifra7, naziv7, jm7, kolicina7, ident_sifra8, naziv8, jm8, kolicina8, ident_sifra9, naziv9, jm9, kolicina9, ident_sifra10, naziv10, jm10, kolicina10, ident_sifra11, naziv11, jm11, kolicina11 FROM Zahtjevi WHERE (id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@odjel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="odjel" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@podnositelj" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="podnositelj" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra7" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv7" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm7" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina7" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, odjel, podnositelj, ident_sifra, naziv, jm, kolicina, ident_sifra2, naziv2, jm2, kolicina2, ident_sifra3, naziv3, jm3, kolicina3, ident_sifra4, naziv4, jm4, kolicina4, ident_sifra5, naziv5, jm5, kolicina5, ident_sifra6, naziv6, jm6, kolicina6, ident_sifra7, naziv7, jm7, kolicina7, ident_sifra8, naziv8, jm8, kolicina8, ident_sifra9, naziv9, jm9, kolicina9, ident_sifra10, naziv10, jm10, kolicina10, ident_sifra11, naziv11, jm11, kolicina11 FROM dbo.Zahtjevi</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Zahtjevi] SET [odjel] = @odjel, [podnositelj] = @podnositelj, [ident_sifra] = @ident_sifra, [naziv] = @naziv, [jm] = @jm, [kolicina] = @kolicina, [ident_sifra2] = @ident_sifra2, [naziv2] = @naziv2, [jm2] = @jm2, [kolicina2] = @kolicina2, [ident_sifra3] = @ident_sifra3, [naziv3] = @naziv3, [jm3] = @jm3, [kolicina3] = @kolicina3, [ident_sifra4] = @ident_sifra4, [naziv4] = @naziv4, [jm4] = @jm4, [kolicina4] = @kolicina4, [ident_sifra5] = @ident_sifra5, [naziv5] = @naziv5, [jm5] = @jm5, [kolicina5] = @kolicina5, [ident_sifra6] = @ident_sifra6, [naziv6] = @naziv6, [jm6] = @jm6, [kolicina6] = @kolicina6, [ident_sifra7] = @ident_sifra7, [naziv7] = @naziv7, [jm7] = @jm7, [kolicina7] = @kolicina7, [ident_sifra8] = @ident_sifra8, [naziv8] = @naziv8, [jm8] = @jm8, [kolicina8] = @kolicina8, [ident_sifra9] = @ident_sifra9, [naziv9] = @naziv9, [jm9] = @jm9, [kolicina9] = @kolicina9, [ident_sifra10] = @ident_sifra10, [naziv10] = @naziv10, [jm10] = @jm10, [kolicina10] = @kolicina10, [ident_sifra11] = @ident_sifra11, [naziv11] = @naziv11, [jm11] = @jm11, [kolicina11] = @kolicina11 WHERE (([id] = @Original_id) AND ((@IsNull_odjel = 1 AND [odjel] IS NULL) OR ([odjel] = @Original_odjel)) AND ((@IsNull_podnositelj = 1 AND [podnositelj] IS NULL) OR ([podnositelj] = @Original_podnositelj)) AND ((@IsNull_ident_sifra = 1 AND [ident_sifra] IS NULL) OR ([ident_sifra] = @Original_ident_sifra)) AND ((@IsNull_naziv = 1 AND [naziv] IS NULL) OR ([naziv] = @Original_naziv)) AND ((@IsNull_jm = 1 AND [jm] IS NULL) OR ([jm] = @Original_jm)) AND ((@IsNull_kolicina = 1 AND [kolicina] IS NULL) OR ([kolicina] = @Original_kolicina)) AND ((@IsNull_ident_sifra2 = 1 AND [ident_sifra2] IS NULL) OR ([ident_sifra2] = @Original_ident_sifra2)) AND ((@IsNull_naziv2 = 1 AND [naziv2] IS NULL) OR ([naziv2] = @Original_naziv2)) AND ((@IsNull_jm2 = 1 AND [jm2] IS NULL) OR ([jm2] = @Original_jm2)) AND ((@IsNull_kolicina2 = 1 AND [kolicina2] IS NULL) OR ([kolicina2] = @Original_kolicina2)) AND ((@IsNull_ident_sifra3 = 1 AND [ident_sifra3] IS NULL) OR ([ident_sifra3] = @Original_ident_sifra3)) AND ((@IsNull_naziv3 = 1 AND [naziv3] IS NULL) OR ([naziv3] = @Original_naziv3)) AND ((@IsNull_jm3 = 1 AND [jm3] IS NULL) OR ([jm3] = @Original_jm3)) AND ((@IsNull_kolicina3 = 1 AND [kolicina3] IS NULL) OR ([kolicina3] = @Original_kolicina3)) AND ((@IsNull_ident_sifra4 = 1 AND [ident_sifra4] IS NULL) OR ([ident_sifra4] = @Original_ident_sifra4)) AND ((@IsNull_naziv4 = 1 AND [naziv4] IS NULL) OR ([naziv4] = @Original_naziv4)) AND ((@IsNull_jm4 = 1 AND [jm4] IS NULL) OR ([jm4] = @Original_jm4)) AND ((@IsNull_kolicina4 = 1 AND [kolicina4] IS NULL) OR ([kolicina4] = @Original_kolicina4)) AND ((@IsNull_ident_sifra5 = 1 AND [ident_sifra5] IS NULL) OR ([ident_sifra5] = @Original_ident_sifra5)) AND ((@IsNull_naziv5 = 1 AND [naziv5] IS NULL) OR ([naziv5] = @Original_naziv5)) AND ((@IsNull_jm5 = 1 AND [jm5] IS NULL) OR ([jm5] = @Original_jm5)) AND ((@IsNull_kolicina5 = 1 AND [kolicina5] IS NULL) OR ([kolicina5] = @Original_kolicina5)) AND ((@IsNull_ident_sifra6 = 1 AND [ident_sifra6] IS NULL) OR ([ident_sifra6] = @Original_ident_sifra6)) AND ((@IsNull_naziv6 = 1 AND [naziv6] IS NULL) OR ([naziv6] = @Original_naziv6)) AND ((@IsNull_jm6 = 1 AND [jm6] IS NULL) OR ([jm6] = @Original_jm6)) AND ((@IsNull_kolicina6 = 1 AND [kolicina6] IS NULL) OR ([kolicina6] = @Original_kolicina6)) AND ((@IsNull_ident_sifra7 = 1 AND [ident_sifra7] IS NULL) OR ([ident_sifra7] = @Original_ident_sifra7)) AND ((@IsNull_naziv7 = 1 AND [naziv7] IS NULL) OR ([naziv7] = @Original_naziv7)) AND ((@IsNull_jm7 = 1 AND [jm7] IS NULL) OR ([jm7] = @Original_jm7)) AND ((@IsNull_kolicina7 = 1 AND [kolicina7] IS NULL) OR ([kolicina7] = @Original_kolicina7)) AND ((@IsNull_ident_sifra8 = 1 AND [ident_sifra8] IS NULL) OR ([ident_sifra8] = @Original_ident_sifra8)) AND ((@IsNull_naziv8 = 1 AND [naziv8] IS NULL) OR ([naziv8] = @Original_naziv8)) AND ((@IsNull_jm8 = 1 AND [jm8] IS NULL) OR ([jm8] = @Original_jm8)) AND ((@IsNull_kolicina8 = 1 AND [kolicina8] IS NULL) OR ([kolicina8] = @Original_kolicina8)) AND ((@IsNull_ident_sifra9 = 1 AND [ident_sifra9] IS NULL) OR ([ident_sifra9] = @Original_ident_sifra9)) AND ((@IsNull_naziv9 = 1 AND [naziv9] IS NULL) OR ([naziv9] = @Original_naziv9)) AND ((@IsNull_jm9 = 1 AND [jm9] IS NULL) OR ([jm9] = @Original_jm9)) AND ((@IsNull_kolicina9 = 1 AND [kolicina9] IS NULL) OR ([kolicina9] = @Original_kolicina9)) AND ((@IsNull_ident_sifra10 = 1 AND [ident_sifra10] IS NULL) OR ([ident_sifra10] = @Original_ident_sifra10)) AND ((@IsNull_naziv10 = 1 AND [naziv10] IS NULL) OR ([naziv10] = @Original_naziv10)) AND ((@IsNull_jm10 = 1 AND [jm10] IS NULL) OR ([jm10] = @Original_jm10)) AND ((@IsNull_kolicina10 = 1 AND [kolicina10] IS NULL) OR ([kolicina10] = @Original_kolicina10)) AND ((@IsNull_ident_sifra11 = 1 AND [ident_sifra11] IS NULL) OR ([ident_sifra11] = @Original_ident_sifra11)) AND ((@IsNull_naziv11 = 1 AND [naziv11] IS NULL) OR ([naziv11] = @Original_naziv11)) AND ((@IsNull_jm11 = 1 AND [jm11] IS NULL) OR ([jm11] = @Original_jm11)) AND ((@IsNull_kolicina11 = 1 AND [kolicina11] IS NULL) OR ([kolicina11] = @Original_kolicina11)));
+SELECT id, odjel, podnositelj, ident_sifra, naziv, jm, kolicina, ident_sifra2, naziv2, jm2, kolicina2, ident_sifra3, naziv3, jm3, kolicina3, ident_sifra4, naziv4, jm4, kolicina4, ident_sifra5, naziv5, jm5, kolicina5, ident_sifra6, naziv6, jm6, kolicina6, ident_sifra7, naziv7, jm7, kolicina7, ident_sifra8, naziv8, jm8, kolicina8, ident_sifra9, naziv9, jm9, kolicina9, ident_sifra10, naziv10, jm10, kolicina10, ident_sifra11, naziv11, jm11, kolicina11 FROM Zahtjevi WHERE (id = @id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@odjel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="odjel" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@podnositelj" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="podnositelj" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra7" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv7" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm7" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina7" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ident_sifra11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@naziv11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@jm11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@kolicina11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_odjel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="odjel" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_odjel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="odjel" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_podnositelj" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="podnositelj" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_podnositelj" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="podnositelj" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra6" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra6" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv6" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv6" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm6" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm6" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina6" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina6" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra7" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra7" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra7" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv7" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv7" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv7" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm7" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm7" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm7" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina7" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina7" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina7" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra8" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra8" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra8" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv8" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv8" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv8" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm8" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm8" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm8" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina8" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina8" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina8" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra9" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra9" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra9" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv9" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv9" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv9" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm9" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm9" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm9" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina9" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina9" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina9" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra10" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra10" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra10" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv10" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv10" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv10" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm10" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm10" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm10" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina10" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina10" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina10" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ident_sifra11" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ident_sifra11" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ident_sifra11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ident_sifra11" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_naziv11" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="naziv11" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_naziv11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="naziv11" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_jm11" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="jm11" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_jm11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="jm11" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_kolicina11" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="kolicina11" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_kolicina11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="kolicina11" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="id" ColumnName="id" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="odjel" DataSetColumn="odjel" />
+              <Mapping SourceColumn="podnositelj" DataSetColumn="podnositelj" />
+              <Mapping SourceColumn="ident_sifra" DataSetColumn="ident_sifra" />
+              <Mapping SourceColumn="naziv" DataSetColumn="naziv" />
+              <Mapping SourceColumn="jm" DataSetColumn="jm" />
+              <Mapping SourceColumn="kolicina" DataSetColumn="kolicina" />
+              <Mapping SourceColumn="ident_sifra2" DataSetColumn="ident_sifra2" />
+              <Mapping SourceColumn="naziv2" DataSetColumn="naziv2" />
+              <Mapping SourceColumn="jm2" DataSetColumn="jm2" />
+              <Mapping SourceColumn="kolicina2" DataSetColumn="kolicina2" />
+              <Mapping SourceColumn="ident_sifra3" DataSetColumn="ident_sifra3" />
+              <Mapping SourceColumn="naziv3" DataSetColumn="naziv3" />
+              <Mapping SourceColumn="jm3" DataSetColumn="jm3" />
+              <Mapping SourceColumn="kolicina3" DataSetColumn="kolicina3" />
+              <Mapping SourceColumn="ident_sifra4" DataSetColumn="ident_sifra4" />
+              <Mapping SourceColumn="naziv4" DataSetColumn="naziv4" />
+              <Mapping SourceColumn="jm4" DataSetColumn="jm4" />
+              <Mapping SourceColumn="kolicina4" DataSetColumn="kolicina4" />
+              <Mapping SourceColumn="ident_sifra5" DataSetColumn="ident_sifra5" />
+              <Mapping SourceColumn="naziv5" DataSetColumn="naziv5" />
+              <Mapping SourceColumn="jm5" DataSetColumn="jm5" />
+              <Mapping SourceColumn="kolicina5" DataSetColumn="kolicina5" />
+              <Mapping SourceColumn="ident_sifra6" DataSetColumn="ident_sifra6" />
+              <Mapping SourceColumn="naziv6" DataSetColumn="naziv6" />
+              <Mapping SourceColumn="jm6" DataSetColumn="jm6" />
+              <Mapping SourceColumn="kolicina6" DataSetColumn="kolicina6" />
+              <Mapping SourceColumn="ident_sifra7" DataSetColumn="ident_sifra7" />
+              <Mapping SourceColumn="naziv7" DataSetColumn="naziv7" />
+              <Mapping SourceColumn="jm7" DataSetColumn="jm7" />
+              <Mapping SourceColumn="kolicina7" DataSetColumn="kolicina7" />
+              <Mapping SourceColumn="ident_sifra8" DataSetColumn="ident_sifra8" />
+              <Mapping SourceColumn="naziv8" DataSetColumn="naziv8" />
+              <Mapping SourceColumn="jm8" DataSetColumn="jm8" />
+              <Mapping SourceColumn="kolicina8" DataSetColumn="kolicina8" />
+              <Mapping SourceColumn="ident_sifra9" DataSetColumn="ident_sifra9" />
+              <Mapping SourceColumn="naziv9" DataSetColumn="naziv9" />
+              <Mapping SourceColumn="jm9" DataSetColumn="jm9" />
+              <Mapping SourceColumn="kolicina9" DataSetColumn="kolicina9" />
+              <Mapping SourceColumn="ident_sifra10" DataSetColumn="ident_sifra10" />
+              <Mapping SourceColumn="naziv10" DataSetColumn="naziv10" />
+              <Mapping SourceColumn="jm10" DataSetColumn="jm10" />
+              <Mapping SourceColumn="kolicina10" DataSetColumn="kolicina10" />
+              <Mapping SourceColumn="ident_sifra11" DataSetColumn="ident_sifra11" />
+              <Mapping SourceColumn="naziv11" DataSetColumn="naziv11" />
+              <Mapping SourceColumn="jm11" DataSetColumn="jm11" />
+              <Mapping SourceColumn="kolicina11" DataSetColumn="kolicina11" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Zahtjev_za_materijalomDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Zahtjev_za_materijalomDataSet" msprop:Generator_UserDSName="Zahtjev_za_materijalomDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Zahtjevi" msprop:Generator_TableClassName="ZahtjeviDataTable" msprop:Generator_TableVarName="tableZahtjevi" msprop:Generator_TablePropName="Zahtjevi" msprop:Generator_RowDeletingName="ZahtjeviRowDeleting" msprop:Generator_RowChangingName="ZahtjeviRowChanging" msprop:Generator_RowEvHandlerName="ZahtjeviRowChangeEventHandler" msprop:Generator_RowDeletedName="ZahtjeviRowDeleted" msprop:Generator_UserTableName="Zahtjevi" msprop:Generator_RowChangedName="ZahtjeviRowChanged" msprop:Generator_RowEvArgName="ZahtjeviRowChangeEvent" msprop:Generator_RowClassName="ZahtjeviRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="odjel" msprop:Generator_ColumnVarNameInTable="columnodjel" msprop:Generator_ColumnPropNameInRow="odjel" msprop:Generator_ColumnPropNameInTable="odjelColumn" msprop:Generator_UserColumnName="odjel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="podnositelj" msprop:Generator_ColumnVarNameInTable="columnpodnositelj" msprop:Generator_ColumnPropNameInRow="podnositelj" msprop:Generator_ColumnPropNameInTable="podnositeljColumn" msprop:Generator_UserColumnName="podnositelj" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ident_sifra" msprop:Generator_ColumnVarNameInTable="columnident_sifra" msprop:Generator_ColumnPropNameInRow="ident_sifra" msprop:Generator_ColumnPropNameInTable="ident_sifraColumn" msprop:Generator_UserColumnName="ident_sifra" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="naziv" msprop:Generator_ColumnVarNameInTable="columnnaziv" msprop:Generator_ColumnPropNameInRow="naziv" msprop:Generator_ColumnPropNameInTable="nazivColumn" msprop:Generator_UserColumnName="naziv" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jm" msprop:Generator_ColumnVarNameInTable="columnjm" msprop:Generator_ColumnPropNameInRow="jm" msprop:Generator_ColumnPropNameInTable="jmColumn" msprop:Generator_UserColumnName="jm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kolicina" msprop:Generator_ColumnVarNameInTable="columnkolicina" msprop:Generator_ColumnPropNameInRow="kolicina" msprop:Generator_ColumnPropNameInTable="kolicinaColumn" msprop:Generator_UserColumnName="kolicina" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ident_sifra2" msprop:Generator_ColumnVarNameInTable="columnident_sifra2" msprop:Generator_ColumnPropNameInRow="ident_sifra2" msprop:Generator_ColumnPropNameInTable="ident_sifra2Column" msprop:Generator_UserColumnName="ident_sifra2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="naziv2" msprop:Generator_ColumnVarNameInTable="columnnaziv2" msprop:Generator_ColumnPropNameInRow="naziv2" msprop:Generator_ColumnPropNameInTable="naziv2Column" msprop:Generator_UserColumnName="naziv2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jm2" msprop:Generator_ColumnVarNameInTable="columnjm2" msprop:Generator_ColumnPropNameInRow="jm2" msprop:Generator_ColumnPropNameInTable="jm2Column" msprop:Generator_UserColumnName="jm2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kolicina2" msprop:Generator_ColumnVarNameInTable="columnkolicina2" msprop:Generator_ColumnPropNameInRow="kolicina2" msprop:Generator_ColumnPropNameInTable="kolicina2Column" msprop:Generator_UserColumnName="kolicina2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ident_sifra3" msprop:Generator_ColumnVarNameInTable="columnident_sifra3" msprop:Generator_ColumnPropNameInRow="ident_sifra3" msprop:Generator_ColumnPropNameInTable="ident_sifra3Column" msprop:Generator_UserColumnName="ident_sifra3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="naziv3" msprop:Generator_ColumnVarNameInTable="columnnaziv3" msprop:Generator_ColumnPropNameInRow="naziv3" msprop:Generator_ColumnPropNameInTable="naziv3Column" msprop:Generator_UserColumnName="naziv3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jm3" msprop:Generator_ColumnVarNameInTable="columnjm3" msprop:Generator_ColumnPropNameInRow="jm3" msprop:Generator_ColumnPropNameInTable="jm3Column" msprop:Generator_UserColumnName="jm3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kolicina3" msprop:Generator_ColumnVarNameInTable="columnkolicina3" msprop:Generator_ColumnPropNameInRow="kolicina3" msprop:Generator_ColumnPropNameInTable="kolicina3Column" msprop:Generator_UserColumnName="kolicina3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ident_sifra4" msprop:Generator_ColumnVarNameInTable="columnident_sifra4" msprop:Generator_ColumnPropNameInRow="ident_sifra4" msprop:Generator_ColumnPropNameInTable="ident_sifra4Column" msprop:Generator_UserColumnName="ident_sifra4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="naziv4" msprop:Generator_ColumnVarNameInTable="columnnaziv4" msprop:Generator_ColumnPropNameInRow="naziv4" msprop:Generator_ColumnPropNameInTable="naziv4Column" msprop:Generator_UserColumnName="naziv4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jm4" msprop:Generator_ColumnVarNameInTable="columnjm4" msprop:Generator_ColumnPropNameInRow="jm4" msprop:Generator_ColumnPropNameInTable="jm4Column" msprop:Generator_UserColumnName="jm4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kolicina4" msprop:Generator_ColumnVarNameInTable="columnkolicina4" msprop:Generator_ColumnPropNameInRow="kolicina4" msprop:Generator_ColumnPropNameInTable="kolicina4Column" msprop:Generator_UserColumnName="kolicina4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ident_sifra5" msprop:Generator_ColumnVarNameInTable="columnident_sifra5" msprop:Generator_ColumnPropNameInRow="ident_sifra5" msprop:Generator_ColumnPropNameInTable="ident_sifra5Column" msprop:Generator_UserColumnName="ident_sifra5" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="naziv5" msprop:Generator_ColumnVarNameInTable="columnnaziv5" msprop:Generator_ColumnPropNameInRow="naziv5" msprop:Generator_ColumnPropNameInTable="naziv5Column" msprop:Generator_UserColumnName="naziv5" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jm5" msprop:Generator_ColumnVarNameInTable="columnjm5" msprop:Generator_ColumnPropNameInRow="jm5" msprop:Generator_ColumnPropNameInTable="jm5Column" msprop:Generator_UserColumnName="jm5" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kolicina5" msprop:Generator_ColumnVarNameInTable="columnkolicina5" msprop:Generator_ColumnPropNameInRow="kolicina5" msprop:Generator_ColumnPropNameInTable="kolicina5Column" msprop:Generator_UserColumnName="kolicina5" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ident_sifra6" msprop:Generator_ColumnVarNameInTable="columnident_sifra6" msprop:Generator_ColumnPropNameInRow="ident_sifra6" msprop:Generator_ColumnPropNameInTable="ident_sifra6Column" msprop:Generator_UserColumnName="ident_sifra6" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="naziv6" msprop:Generator_ColumnVarNameInTable="columnnaziv6" msprop:Generator_ColumnPropNameInRow="naziv6" msprop:Generator_ColumnPropNameInTable="naziv6Column" msprop:Generator_UserColumnName="naziv6" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jm6" msprop:Generator_ColumnVarNameInTable="columnjm6" msprop:Generator_ColumnPropNameInRow="jm6" msprop:Generator_ColumnPropNameInTable="jm6Column" msprop:Generator_UserColumnName="jm6" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kolicina6" msprop:Generator_ColumnVarNameInTable="columnkolicina6" msprop:Generator_ColumnPropNameInRow="kolicina6" msprop:Generator_ColumnPropNameInTable="kolicina6Column" msprop:Generator_UserColumnName="kolicina6" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ident_sifra7" msprop:Generator_ColumnVarNameInTable="columnident_sifra7" msprop:Generator_ColumnPropNameInRow="ident_sifra7" msprop:Generator_ColumnPropNameInTable="ident_sifra7Column" msprop:Generator_UserColumnName="ident_sifra7" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="naziv7" msprop:Generator_ColumnVarNameInTable="columnnaziv7" msprop:Generator_ColumnPropNameInRow="naziv7" msprop:Generator_ColumnPropNameInTable="naziv7Column" msprop:Generator_UserColumnName="naziv7" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jm7" msprop:Generator_ColumnVarNameInTable="columnjm7" msprop:Generator_ColumnPropNameInRow="jm7" msprop:Generator_ColumnPropNameInTable="jm7Column" msprop:Generator_UserColumnName="jm7" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kolicina7" msprop:Generator_ColumnVarNameInTable="columnkolicina7" msprop:Generator_ColumnPropNameInRow="kolicina7" msprop:Generator_ColumnPropNameInTable="kolicina7Column" msprop:Generator_UserColumnName="kolicina7" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ident_sifra8" msprop:Generator_ColumnVarNameInTable="columnident_sifra8" msprop:Generator_ColumnPropNameInRow="ident_sifra8" msprop:Generator_ColumnPropNameInTable="ident_sifra8Column" msprop:Generator_UserColumnName="ident_sifra8" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="naziv8" msprop:Generator_ColumnVarNameInTable="columnnaziv8" msprop:Generator_ColumnPropNameInRow="naziv8" msprop:Generator_ColumnPropNameInTable="naziv8Column" msprop:Generator_UserColumnName="naziv8" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jm8" msprop:Generator_ColumnVarNameInTable="columnjm8" msprop:Generator_ColumnPropNameInRow="jm8" msprop:Generator_ColumnPropNameInTable="jm8Column" msprop:Generator_UserColumnName="jm8" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kolicina8" msprop:Generator_ColumnVarNameInTable="columnkolicina8" msprop:Generator_ColumnPropNameInRow="kolicina8" msprop:Generator_ColumnPropNameInTable="kolicina8Column" msprop:Generator_UserColumnName="kolicina8" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ident_sifra9" msprop:Generator_ColumnVarNameInTable="columnident_sifra9" msprop:Generator_ColumnPropNameInRow="ident_sifra9" msprop:Generator_ColumnPropNameInTable="ident_sifra9Column" msprop:Generator_UserColumnName="ident_sifra9" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="naziv9" msprop:Generator_ColumnVarNameInTable="columnnaziv9" msprop:Generator_ColumnPropNameInRow="naziv9" msprop:Generator_ColumnPropNameInTable="naziv9Column" msprop:Generator_UserColumnName="naziv9" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jm9" msprop:Generator_ColumnVarNameInTable="columnjm9" msprop:Generator_ColumnPropNameInRow="jm9" msprop:Generator_ColumnPropNameInTable="jm9Column" msprop:Generator_UserColumnName="jm9" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kolicina9" msprop:Generator_ColumnVarNameInTable="columnkolicina9" msprop:Generator_ColumnPropNameInRow="kolicina9" msprop:Generator_ColumnPropNameInTable="kolicina9Column" msprop:Generator_UserColumnName="kolicina9" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ident_sifra10" msprop:Generator_ColumnVarNameInTable="columnident_sifra10" msprop:Generator_ColumnPropNameInRow="ident_sifra10" msprop:Generator_ColumnPropNameInTable="ident_sifra10Column" msprop:Generator_UserColumnName="ident_sifra10" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="naziv10" msprop:Generator_ColumnVarNameInTable="columnnaziv10" msprop:Generator_ColumnPropNameInRow="naziv10" msprop:Generator_ColumnPropNameInTable="naziv10Column" msprop:Generator_UserColumnName="naziv10" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jm10" msprop:Generator_ColumnVarNameInTable="columnjm10" msprop:Generator_ColumnPropNameInRow="jm10" msprop:Generator_ColumnPropNameInTable="jm10Column" msprop:Generator_UserColumnName="jm10" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kolicina10" msprop:Generator_ColumnVarNameInTable="columnkolicina10" msprop:Generator_ColumnPropNameInRow="kolicina10" msprop:Generator_ColumnPropNameInTable="kolicina10Column" msprop:Generator_UserColumnName="kolicina10" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ident_sifra11" msprop:Generator_ColumnVarNameInTable="columnident_sifra11" msprop:Generator_ColumnPropNameInRow="ident_sifra11" msprop:Generator_ColumnPropNameInTable="ident_sifra11Column" msprop:Generator_UserColumnName="ident_sifra11" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="naziv11" msprop:Generator_ColumnVarNameInTable="columnnaziv11" msprop:Generator_ColumnPropNameInRow="naziv11" msprop:Generator_ColumnPropNameInTable="naziv11Column" msprop:Generator_UserColumnName="naziv11" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jm11" msprop:Generator_ColumnVarNameInTable="columnjm11" msprop:Generator_ColumnPropNameInRow="jm11" msprop:Generator_ColumnPropNameInTable="jm11Column" msprop:Generator_UserColumnName="jm11" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kolicina11" msprop:Generator_ColumnVarNameInTable="columnkolicina11" msprop:Generator_ColumnPropNameInRow="kolicina11" msprop:Generator_ColumnPropNameInTable="kolicina11Column" msprop:Generator_UserColumnName="kolicina11" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Zahtjevi" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

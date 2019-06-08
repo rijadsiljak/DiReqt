@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="LOGISTIKA_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LOGISTIKA LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel.White2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel.White.30px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RIT_Sistemi_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RIT Sistemi LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DE-Germany-Flag-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DE-Germany-Flag-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Odjel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Odjel.White2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RPRODAJA_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RPRODAJA LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Load.White1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Load.White.24px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="request2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\request2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Planiranje__Transportna_paleta__LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Planiranje (Transportna paleta) LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RNabavka_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RNabavka LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vw.sa.1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vw.sa.11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RPlaniranje__Transportna_paleta__LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RPlaniranje (Transportna paleta) LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volkswagen.Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Volkswagen.Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Password.24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Password.24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RUPS_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RUPS LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DIREKTOR_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DIREKTOR LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kontrol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kontrol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo.130px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Calcutor.White1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Calcutor.White.40px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search.New.White.24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search.New.White.24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kontroling.White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kontroling.White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Planiranje__Komponente__LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Planiranje (Komponente) LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Print.White.New.30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Print.White.New.30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PosebnoOdobrenje.White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PosebnoOdobrenje.White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RINFRASTRUKTURA_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RINFRASTRUKTURA LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close.SteelBlue1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Email.White.30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Email.White.30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RPersonalna_i_pravna_služba_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RPersonalna i pravna služba LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RProizvodnja__Komponente__LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RProizvodnja (Komponente) LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IT_Sistemi_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IT Sistemi LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DIREKTOR_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DIREKTOR LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RLOGISTIKA_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RLOGISTIKA LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImePrezime.White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImePrezime.White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unlocked.png.white.invert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unlocked.png.white.invert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Odjel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Odjel.White1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RQS_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RQS LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minimize.SteelBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minimize.SteelBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GermanyFlag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GermanyFlag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2081a9db9c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2081a9db9c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Finansije_i_kontroling_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Finansije i kontroling LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Proizvodnja__Komponente__LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Proizvodnja (Komponente) LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zahtjev.White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zahtjev.White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Load.White.24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Load.White.24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yes.White.24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yes.White.24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RLogistika_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RLogistika LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="requestx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\requestx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RUPS_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RUPS LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KONTROLING_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KONTROLING LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search.New.White1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search.New.White.24px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yes.White1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yes.White.30px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="INFRASTRUKTURA_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\INFRASTRUKTURA LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search.New.White2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search.New.White.30px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BA-Bosnia-and-Herzegovina-Flag-icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BA-Bosnia-and-Herzegovina-Flag-icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kontroling_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kontroling LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NABAVKA_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NABAVKA LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QS_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QS LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ROdržavanje_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ROdržavanje LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RProdaja_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RProdaja LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImePrezime1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImePrezime.White1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BA-Bosnia-and-Herzegovina-Flag-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BA-Bosnia-and-Herzegovina-Flag-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DE-Germany-Flag-icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DE-Germany-Flag-icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RFinansije_i_kontroling_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RFinansije i kontroling LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Personalna_i_pravna_služba_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Personalna i pravna služba LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save.White.30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save.White.30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Username.32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Username.32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Infrastruktura_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Infrastruktura LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="request" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\request.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Proizvodnja__Transportna_paleta__LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Proizvodnja (Transportna paleta) LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DE-Germany-Flag-icon (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DE-Germany-Flag-icon (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PRODAJA_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PRODAJA LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yes.White.30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yes.White.30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SKONTROLING_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SKONTROLING LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="padlock.white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\padlock.white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="angry_boss_anger_fury_rage_employee_bad-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\angry_boss_anger_fury_rage_employee_bad-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RODRŽAVANJE_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RODRŽAVANJE LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DE-Germany-Flag-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DE-Germany-Flag-icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo.130px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UPS_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UPS LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RPlaniranje__Komponente__LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RPlaniranje (Komponente) LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search.New.White.30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search.New.White.30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Održavanje_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Održavanje LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nabavka.White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nabavka.White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QS_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QS LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search.New.White3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search.New.White.30px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prodaja_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Prodaja LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RInfrastruktura_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RInfrastruktura LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rukovodilac.White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rukovodilac.White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel.White.30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel.White.30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="print" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\print.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RSekretarijat_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RSekretarijat LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SKONTROLING_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SKONTROLING LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImePrezime2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImePrezime.White2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bosnia-and-Herzegovina-flat-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bosnia-and-Herzegovina-flat-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Username1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Username.24px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nabavka_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nabavka LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ODRŽAVANJE_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ODRŽAVANJE LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volkswagen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Volkswagen.Logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="padlock-unlock.png.white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\padlock-unlock.png.white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sekretarijat_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sekretarijat LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BiHFlag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BiHFlag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RQS_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RQS LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Username.24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Username.24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel.White1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel.White.30px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo.130px4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Calcutor.White.40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Calcutor.White.40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unlocked.png.white2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unlocked.png.white.invert2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maximize.SteelBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maximize.SteelBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo.130px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo.130px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RNABAVKA_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RNABAVKA LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volkswagen2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Volkswagen.Logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo.130px3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RProizvodnja__Transportna_paleta__LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RProizvodnja (Transportna paleta) LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="direqt.logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\direqt.logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel.White.24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel.White.24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business_management" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business-management.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="direqt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\direqt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Odjel.White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Odjel.White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Return.White.30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Return.White.30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logistika_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logistika LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unlocked.png.white1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unlocked.png.white.invert1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Restore.SteelBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Restore.SteelBlue1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UPS_LOGO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UPS LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close.SteelBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close.SteelBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="padlock-unlock.png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\padlock-unlock.png.white1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

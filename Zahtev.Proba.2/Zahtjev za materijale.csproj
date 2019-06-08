@@ -1,0 +1,621 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2C8B80E-A8E6-4E5D-8271-2C229502CD13}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DiReqt</RootNamespace>
+    <AssemblyName>DiReqt</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\vwsa.local\VWSA_DFS\Redirekcija\siljak\My Documents\Volkswagen Sarajevo 2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <WebPage>publish.htm</WebPage>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>30</ApplicationRevision>
+    <ApplicationVersion>1.1.2.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C953346D59F216A67E6B8D96E364896F14C4484E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Zahtev.Proba.2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>volkswagen_logo_1978_1920x1080_JNw_2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>DiReqt.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="AxInterop.AcroPDFLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Volkswagen Sarajevo\DiReqt\AxInterop.AcroPDFLib.DLL</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\Digitalizacija.Zahtjev.za.materijale\Digitalizacija.Zahtjev.za.materijale\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPOS.Designer.cs">
+      <DependentUpon>AdminPOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPR.Designer.cs">
+      <DependentUpon>AdminPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mail.Designer.cs">
+      <DependentUpon>mail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS.Designer.cs">
+      <DependentUpon>POS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PosebnoOdobrenje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PosebnoOdobrenje.Designer.cs">
+      <DependentUpon>PosebnoOdobrenje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnik.cs" />
+    <Compile Include="MainProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainProgram.Designer.cs">
+      <DependentUpon>MainProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NabavkaDB.cs" />
+    <Compile Include="PromjenaRukovodilaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PromjenaRukovodilaca.Designer.cs">
+      <DependentUpon>PromjenaRukovodilaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PromjenaSifre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PromjenaSifre.Designer.cs">
+      <DependentUpon>PromjenaSifre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZZM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZZM.Designer.cs">
+      <DependentUpon>ZZM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nabavka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nabavka.Designer.cs">
+      <DependentUpon>Nabavka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kontroling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kontroling.Designer.cs">
+      <DependentUpon>Kontroling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PDF.cs" />
+    <Compile Include="PDFC.cs" />
+    <Compile Include="PLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLogin.Designer.cs">
+      <DependentUpon>PLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rukovodilac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rukovodilac.Designer.cs">
+      <DependentUpon>Rukovodilac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\EventHandlerthis.cs" />
+    <Compile Include="Zahtjev.cs" />
+    <Compile Include="Zahtjev_za_materijalomDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Zahtjev_za_materijalomDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminPOS.resx">
+      <DependentUpon>AdminPOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPR.resx">
+      <DependentUpon>AdminPR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mail.resx">
+      <DependentUpon>mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS.resx">
+      <DependentUpon>POS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PromjenaRukovodilaca.resx">
+      <DependentUpon>PromjenaRukovodilaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PromjenaSifre.resx">
+      <DependentUpon>PromjenaSifre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZZM.resx">
+      <DependentUpon>ZZM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nabavka.resx">
+      <DependentUpon>Nabavka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kontroling.resx">
+      <DependentUpon>Kontroling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PosebnoOdobrenje.resx">
+      <DependentUpon>PosebnoOdobrenje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainProgram.resx">
+      <DependentUpon>MainProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLogin.resx">
+      <DependentUpon>PLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rukovodilac.resx">
+      <DependentUpon>Rukovodilac.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Zahtev.Proba.2_TemporaryKey.pfx" />
+    <None Include="Zahtjev_za_materijalomDataSet.xsc">
+      <DependentUpon>Zahtjev_za_materijalomDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Zahtjev_za_materijalomDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Zahtjev_za_materijalomDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Zahtjev_za_materijalomDataSet.xss">
+      <DependentUpon>Zahtjev_za_materijalomDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bitmap1.bmp" />
+    <Content Include="Bitmap2.bmp" />
+    <None Include="Resources\VW.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\save1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\532.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Computer-Printer-PNG-Free-Download.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Download-Button-Free-PNG-Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Download-Button-Free-PNG-Image1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\calc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\2081a9db9c.png" />
+    <None Include="Resources\direqt.logo.png" />
+    <None Include="Resources\angry_boss_anger_fury_rage_employee_bad-512.png" />
+    <None Include="Resources\Finansije i kontroling LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Logo.130px.png" />
+    <None Include="Resources\Password.24px.png" />
+    <None Include="Resources\Logo.130px1.png" />
+    <None Include="Resources\ImePrezime.White.png" />
+    <None Include="Resources\Odjel.White.png" />
+    <None Include="Resources\Nabavka.White.png" />
+    <None Include="Resources\Kontroling.White.png" />
+    <None Include="Resources\PosebnoOdobrenje.White.png" />
+    <None Include="Resources\Close.SteelBlue.png" />
+    <None Include="Resources\Logo.130px2.png" />
+    <None Include="Resources\Odjel.White1.png" />
+    <None Include="Resources\Calcutor.White.40px.png" />
+    <None Include="Resources\Load.White.24px.png" />
+    <None Include="Resources\Cancel.White.30px.png" />
+    <None Include="Resources\Minimize.SteelBlue.png" />
+    <None Include="Resources\Maximize.SteelBlue.png" />
+    <None Include="Resources\Close.SteelBlue1.png" />
+    <None Include="Resources\Logo.130px3.png" />
+    <None Include="Resources\ImePrezime.White1.png" />
+    <None Include="Resources\Odjel.White2.png" />
+    <None Include="Resources\Email.White.30px.png" />
+    <None Include="Resources\Cancel.White.30px1.png" />
+    <None Include="Resources\Calcutor.White.40px1.png" />
+    <None Include="Resources\Load.White.24px1.png" />
+    <None Include="Resources\Cancel.White.24px.png" />
+    <None Include="Resources\Logo.130px4.png" />
+    <None Include="Resources\Cancel.White.30px2.png" />
+    <None Include="Resources\ImePrezime.White2.png" />
+    <None Include="Resources\BA-Bosnia-and-Herzegovina-Flag-icon.png" />
+    <None Include="Resources\DE-Germany-Flag-icon.png" />
+    <None Include="Resources\DE-Germany-Flag-icon1.png" />
+    <None Include="Resources\BA-Bosnia-and-Herzegovina-Flag-icon %281%29.png" />
+    <None Include="Resources\DE-Germany-Flag-icon %281%29.png" />
+    <None Include="Resources\DE-Germany-Flag-icon %282%29.png" />
+    <None Include="Resources\Bosnia-and-Herzegovina-flat-icon.png" />
+    <None Include="Resources\BiHFlag.png" />
+    <None Include="Resources\GermanyFlag.png" />
+    <None Include="Resources\padlock.white.png" />
+    <None Include="Resources\padlock-unlock.png.white.png" />
+    <None Include="Resources\padlock-unlock.png.white1.png" />
+    <Content Include="Resources\PRINT">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\direqt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\confirmation-1152155_960_720.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\kisscc0-computer-icons-x-mark-button-download-check-mark-x-icon-5b77fd7b897412.843774941534590331563.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\edit-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\128x128.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Cart-PNG-Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\kisspng-computer-mouse-magnifying-glass-hand-icon-flattened-holding-a-magnifying-glass-hand-5a80877b207078.7341077215183727311329.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\audit_verify_statement_scrutiny-512.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\kisspng-magnifying-glass-icon-magnifier-5a734f660445a7.2445126415175064060175.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Resource Include="Resources\search-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <None Include="Resources\Computer-Printer-PNG-Free-Download2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\business-management.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\DA.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Resources\DIREKTOR LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Infrastruktura LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IT Sistemi LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Kontroling LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\kontrol.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Resources\Logistika LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\nab.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Resources\Nabavka LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\NE.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Resources\Održavanje LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Planiranje %28Komponente%29 LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Planiranje %28Transportna paleta%29 LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Personalna i pravna služba LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\print.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Print.White.New.30px.png" />
+    <Content Include="Resources\Prodaja LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Proizvodnja %28Komponente%29 LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Proizvodnja %28Transportna paleta%29 LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\QS LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\refresh.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\request.png" />
+    <None Include="Resources\request2.png" />
+    <None Include="Resources\requestx.png" />
+    <Content Include="Resources\Restore.SteelBlue.png" />
+    <None Include="Resources\Restore.SteelBlue1.png" />
+    <None Include="Resources\Return.White.30px.png" />
+    <Content Include="Resources\RInfrastruktura LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\RIT Sistemi LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\RFinansije i kontroling LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Resources\RLogistika LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\RNabavka LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ROdržavanje LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\RPlaniranje %28Komponente%29 LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\RPlaniranje %28Transportna paleta%29 LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\RPersonalna i pravna služba LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\RProdaja LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\RProizvodnja %28Komponente%29 LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\RProizvodnja %28Transportna paleta%29 LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\RQS LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\save1.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\save.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\RUPS LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\search.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\RSekretarijat LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Sekretarijat LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Rukovodilac.White.png" />
+    <None Include="Resources\Search.New.White.30px.png" />
+    <None Include="Resources\Search.New.White.24px.png" />
+    <None Include="Resources\Save.White.30px.png" />
+    <None Include="Resources\Search.New.White.24px1.png" />
+    <None Include="Resources\Search.New.White.30px1.png" />
+    <None Include="Resources\Search.New.White.30px2.png" />
+    <Content Include="Resources\SKONTROLING LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\UPS LOGO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\user.png" />
+    <None Include="Resources\Username.24px.png" />
+    <None Include="Resources\Volkswagen.Logo.png" />
+    <None Include="Resources\Volkswagen.Logo1.png" />
+    <None Include="Resources\Username.24px1.png" />
+    <None Include="Resources\Volkswagen.Logo2.png" />
+    <None Include="Resources\Username.32px.png" />
+    <None Include="Resources\unlocked.png.white.invert.png" />
+    <None Include="Resources\unlocked.png.white.invert1.png" />
+    <None Include="Resources\unlocked.png.white.invert2.png" />
+    <Content Include="Resources\volkswagen_logo_1978_1920x1080_ZuF_icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\vw.sa.11.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Zahtjev.White.png" />
+    <None Include="Resources\Yes.White.30px.png" />
+    <None Include="Resources\Yes.White.24px.png" />
+    <None Include="Resources\Yes.White.30px1.png" />
+    <Content Include="volkswagen_logo_1978_1920x1080_6Ml_icon.ico" />
+    <Content Include="volkswagen_logo_1978_1920x1080_JNw_2.ico" />
+    <Content Include="volkswagen_logo_1978_1920x1080_ZuF_icon.ico" />
+    <Content Include="vw.sa.1.png" />
+    <None Include="Resources\vw.sa.1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
